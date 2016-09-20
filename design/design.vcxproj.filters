@@ -24,12 +24,24 @@
     <ClCompile Include="Product.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="AbstractProduct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Product.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractProduct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
