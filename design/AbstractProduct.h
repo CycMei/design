@@ -22,7 +22,7 @@ public:
 
 class AbstractProductB {
 public:
-	virtual ~AbstractProductB();
+	virtual ~AbstractProductB()=0;
 protected:
 	AbstractProductB();
 };
