@@ -148,15 +148,23 @@
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="AbstractProduct.cpp" />
+    <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="BuilderProduct.cpp" />
+    <ClCompile Include="Director.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Singletom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="AbstractProduct.h" />
+    <ClInclude Include="Builder.h" />
+    <ClInclude Include="BuilderProduct.h" />
+    <ClInclude Include="Director.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="Singletom.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

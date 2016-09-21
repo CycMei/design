@@ -30,6 +30,18 @@
     <ClCompile Include="AbstractFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Singletom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuilderProduct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Director.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -42,6 +54,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="AbstractFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Singletom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuilderProduct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Director.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

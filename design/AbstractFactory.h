@@ -11,6 +11,8 @@ protected:
 	AbstractFactory();
 };
 
+
+
 class ConcreteFactory1 :public AbstractFactory {
 public:
 	ConcreteFactory1();

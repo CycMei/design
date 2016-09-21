@@ -3,8 +3,14 @@
 #include"Factory.h"
 #include"Product.h"
 #include"AbstractFactory.h"
+#include"Singletom.h"
+#include"BuilderProduct.h"
+#include"Builder.h"
+#include"Director.h"
 #include<vld.h>
 #include<iostream>
+
+
 void test1() {
 	Factory *fac = new ConcreteFactory();
 	Product *pro = fac->CreateProduct();
@@ -20,11 +26,23 @@ void test3() {
 	delete A;
 	delete B;
 	delete cf1;
-
-	//AbstractFactory *cf2 = new ConcreteFactory2();
-	//cf2->CreateProductA();
-	//cf2->CreateProductB();
 }
+
+void test4() {
+	Singleton *sgn = Singleton::Instance();
+	delete sgn;
+}
+
+void test5() {
+	auto temp = new ConcreteBuilder();
+	Director *d = new Director(temp);
+	d->Construct();
+	delete d;
+	delete temp;
+
+	
+}
+
 void main() {
-	test3();
+	test5();
 }  
