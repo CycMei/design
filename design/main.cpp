@@ -1,4 +1,4 @@
-// 74
+// 94
 
 #include"Factory.h"
 #include"Product.h"
@@ -19,6 +19,13 @@
 #include"FlyweightFactory.h"
 #include"Facade.h"
 #include"Proxy.h"
+#include"Template.h"
+#include"Strategy.h"
+#include"Context.h"
+#include"State.h"
+#include"StateContext.h"
+#include"Subject.h"
+#include"Observer.h"
 #include<vld.h>
 #include<iostream>
 
@@ -113,6 +120,48 @@ void test13() {
 	delete p;
 }
 
+void test14() {
+	AbstractClass *p1 = new ConcreteClass1();
+	AbstractClass *p2 = new ConcreteClass2();
+	p1->TemplateMethod();
+	p2->TemplateMethod();
+	delete p2;
+	delete p1;
+	//class AA {
+	//public:
+	//	void diss() {
+	//		std::cout << this << std::endl;
+	//	}
+	//};
+	//AA a;
+	//std::cout << &a << std::endl;
+	//a.diss();
+}
+
+void test15() {
+	Strategy *ps = new ConcreteStrategyA();
+	Context *pc = new Context(ps);
+	pc->DoAction();
+	if (pc)
+		delete pc;
+}
+
+void test16() {
+	State *st = new ConcreteStateA();
+	StateContext *con = new StateContext(st);
+	con->OperationChangeState();
+	con->OperationChangeState();
+	con->OperationChangeState();
+	delete con;
+}
+
+void test17() {
+	SubConcreteSubject *sub = new SubConcreteSubject();
+	Observer *o1 = new ConcreteObserverA(sub);
+	Observer *o2 = new ConcreteObserverB(sub);
+
+}
+
 void main() {
-	test13();
-}  
+	test17();
+}
