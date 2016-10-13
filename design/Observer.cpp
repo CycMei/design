@@ -2,7 +2,7 @@
 #include"Subject.h"
 #include<iostream>
 
-Observer::Observer() :_st('\0') {
+Observer::Observer() :_st("\0") {
 
 }
 

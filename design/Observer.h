@@ -15,7 +15,7 @@ protected:
 class ConcreteObserverA :public Observer {
 public:
 	virtual OBSubject *GetSubject();
-	ConcreteObserverA(OBSubject *sub);
+	explicit ConcreteObserverA(OBSubject *sub);
 	virtual ~ConcreteObserverA();
 	void Update(OBSubject *sub) override;
 	void PrintInfo() override;
@@ -27,7 +27,7 @@ private:
 class ConcreteObserverB :public Observer {
 public:
 	virtual OBSubject *GetSubject();
-	ConcreteObserverB(OBSubject *sub);
+	explicit ConcreteObserverB(OBSubject *sub);
 	virtual ~ConcreteObserverB();
 	void Update(OBSubject *sub) override;
 	void PrintInfo() override;

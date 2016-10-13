@@ -1,4 +1,4 @@
-// 94
+//// 126
 
 #include"Factory.h"
 #include"Product.h"
@@ -26,6 +26,12 @@
 #include"StateContext.h"
 #include"Subject.h"
 #include"Observer.h"
+#include"Memento.h"
+#include"Mediator.h"
+#include"Colleage.h"
+#include"Command.h"
+#include"Invoker.h"
+#include"Reciever.h"
 #include<vld.h>
 #include<iostream>
 
@@ -156,12 +162,68 @@ void test16() {
 }
 
 void test17() {
-	SubConcreteSubject *sub = new SubConcreteSubject();
-	Observer *o1 = new ConcreteObserverA(sub);
-	Observer *o2 = new ConcreteObserverB(sub);
+	//SubConcreteSubject *sub = new SubConcreteSubject();
+	//Observer *o1 = new ConcreteObserverA(sub);
+	//Observer *o2 = new ConcreteObserverB(sub);
+	//sub->SetState("old");
+	//sub->Notify();
+	//sub->SetState("new");
+	//sub->Notify();
+	//delete o2;
+	//o2 = nullptr;
+}
 
+void test18() {
+	Originator *o = new Originator();
+	o->SetState("old");
+	o->PrintState();
+
+	Memento *m = o->createMemento();
+	o->SetState("new");
+	o->PrintState();
+	o->RestoreToMemento(m);
+	o->PrintState();
+
+	delete o;
+	o = nullptr;
+}
+
+void test19() {
+	ConcreteMediator *m = new ConcreteMediator();
+
+	ConcreteColleageA *c1 = new ConcreteColleageA(m);
+	ConcreteColleageB *c2 = new ConcreteColleageB(m);
+
+	m->IntroColleage(c1, c2);
+
+	c1->SetState("old");
+	c2->SetState("new");
+	c1->Action();
+	c2->Action();
+	std::cout << std::endl;
+
+	c1->SetState("new");
+	c1->Action();
+	c2->Action();
+	std::cout << std::endl;
+
+	c2->SetState("old");
+	c2->Action();
+	c1->Action();
+
+	delete c1;
+	delete c2;
+	delete m;
+}
+
+void test20() {
+	Reciever *rev = new Reciever();
+	Command *cmd = new ConcreteCommand(rev);
+	Invoker *inv = new Invoker(cmd);
+	inv->Invoke();
+	delete rev;
 }
 
 void main() {
-	test17();
+	test20();
 }

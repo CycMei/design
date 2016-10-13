@@ -8,14 +8,14 @@ public:
 	virtual void Operation(const std::string &extrinsicState);
 	std::string GetIntrinsicState();
 protected:
-	Flyweight(std::string intrinsicState);
+	explicit Flyweight(std::string intrinsicState);
 private:
 	std::string _intrinsicState;
 };
 
 class ConcreteFlyweight :public Flyweight {
 public:
-	ConcreteFlyweight(std::string intrinsicState);
+	explicit ConcreteFlyweight(std::string intrinsicState);
 	~ConcreteFlyweight();
 	void Operation(const std::string &extrinsicState) override;
 };

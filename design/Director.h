@@ -3,7 +3,7 @@
 class Builder;
 class Director {
 public:
-	Director(Builder *bld);
+	explicit Director(Builder *bld);
 	~Director();
 	void Construct();
 private:

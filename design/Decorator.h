@@ -15,7 +15,7 @@ public:
 };
 class Decorator :public Component {
 public:
-	Decorator(Component *con);
+	explicit Decorator(Component *con);
 	virtual ~Decorator();
 	void Operation() override;
 protected:
@@ -23,7 +23,7 @@ protected:
 };
 class ConcreteDecorator :public Decorator {
 public:
-	ConcreteDecorator(Component *com);
+	explicit ConcreteDecorator(Component *com);
 	~ConcreteDecorator();
 	void Operation() override;
 	void AddedBehavior();

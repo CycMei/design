@@ -3,7 +3,7 @@
 class Strategy;
 class Context {
 public:
-	Context(Strategy *stg);
+	explicit Context(Strategy *stg);
 	~Context();
 	void DoAction();
 private:

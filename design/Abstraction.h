@@ -10,7 +10,7 @@ protected:
 };
 class RefinedAbstraction :public Abstraction {
 public:
-	RefinedAbstraction(AbstractionImp *imp);
+	explicit RefinedAbstraction(AbstractionImp *imp);
 	~RefinedAbstraction();
 	void Operation();
 private:

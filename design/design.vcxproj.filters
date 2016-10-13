@@ -102,6 +102,24 @@
     <ClCompile Include="Subject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Memento.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Colleage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Reciever.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Invoker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -180,6 +198,24 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Observer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Memento.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Colleage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Reciever.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Invoker.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,7 +4,7 @@ class State;
 class StateContext {
 public:
 	StateContext();
-	StateContext(State *state);
+	explicit StateContext(State *state);
 	~StateContext();
 	void OperationInterface();
 	void OperationChangeState();
