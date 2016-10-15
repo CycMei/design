@@ -120,6 +120,21 @@
     <ClCompile Include="Invoker.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Element.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Handle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Aggregate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -216,6 +231,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Invoker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Visitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Element.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Handle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Aggregate.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

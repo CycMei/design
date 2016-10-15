@@ -151,6 +151,7 @@
     <ClCompile Include="AbstractionImp.cpp" />
     <ClCompile Include="AbstractProduct.cpp" />
     <ClCompile Include="Adapter.cpp" />
+    <ClCompile Include="Aggregate.cpp" />
     <ClCompile Include="Builder.cpp" />
     <ClCompile Include="BuilderProduct.cpp" />
     <ClCompile Include="Colleage.cpp" />
@@ -160,11 +161,14 @@
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Director.cpp" />
+    <ClCompile Include="Element.cpp" />
     <ClCompile Include="Facade.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Flyweight.cpp" />
     <ClCompile Include="FlyweightFactory.cpp" />
+    <ClCompile Include="Handle.cpp" />
     <ClCompile Include="Invoker.cpp" />
+    <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="Leaf.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mediator.cpp" />
@@ -181,6 +185,7 @@
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="Subject.h" />
     <ClCompile Include="Template.cpp" />
+    <ClCompile Include="Visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
@@ -188,6 +193,7 @@
     <ClInclude Include="AbstractionImp.h" />
     <ClInclude Include="AbstractProduct.h" />
     <ClInclude Include="Adapter.h" />
+    <ClInclude Include="Aggregate.h" />
     <ClInclude Include="Builder.h" />
     <ClInclude Include="BuilderProduct.h" />
     <ClInclude Include="Colleage.h" />
@@ -197,11 +203,14 @@
     <ClInclude Include="Context.h" />
     <ClInclude Include="Decorator.h" />
     <ClInclude Include="Director.h" />
+    <ClInclude Include="Element.h" />
     <ClInclude Include="Facade.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Flyweight.h" />
     <ClInclude Include="FlyweightFactory.h" />
+    <ClInclude Include="Handle.h" />
     <ClInclude Include="Invoker.h" />
+    <ClInclude Include="Iterator.h" />
     <ClInclude Include="Leaf.h" />
     <ClInclude Include="Mediator.h" />
     <ClInclude Include="Memento.h" />
@@ -215,6 +224,7 @@
     <ClInclude Include="StateContext.h" />
     <ClInclude Include="Strategy.h" />
     <ClInclude Include="Template.h" />
+    <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

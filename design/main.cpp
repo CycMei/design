@@ -1,4 +1,4 @@
-//// 126
+//// 148
 
 #include"Factory.h"
 #include"Product.h"
@@ -32,6 +32,16 @@
 #include"Command.h"
 #include"Invoker.h"
 #include"Reciever.h"
+
+#include"Visitor.h"
+#include"Element.h"
+
+
+#include"Handle.h"
+
+#include"Iterator.h"
+#include"Aggregate.h"
+
 #include<vld.h>
 #include<iostream>
 
@@ -221,9 +231,42 @@ void test20() {
 	Command *cmd = new ConcreteCommand(rev);
 	Invoker *inv = new Invoker(cmd);
 	inv->Invoke();
-	delete rev;
+	delete inv;
+}
+
+void test21() {
+	Visitor *vis = new ConcreteVisitoraA();
+	Element *elm = new ConcreteElementA();
+	elm->Accept(vis);
+	delete elm;
+	elm = nullptr;
+	delete vis;
+	vis = nullptr;
+}
+
+void test22() {
+	Handle *h1 = new ConcreteHandleA();
+	Handle *h2 = new ConcreteHandleB();
+	h1->SetSuccessor(h2);
+	h1->HandleRequest();
+	delete h2;
+	h2 = nullptr;
+	delete h1;
+	h1 = nullptr;
+}
+
+void test23() {
+	Aggregate *ag = new ConcreteAggregate();
+	Iterator *it = new ConcreteIterator(ag);
+	for (; !(it->IsDone()); it->Next()) {
+		std::cout << it->CurrentItem() << std::endl;
+	}
+	delete it;
+	it = nullptr;
+	delete ag;
+	ag = nullptr;
 }
 
 void main() {
-	test20();
+	test23();
 }
