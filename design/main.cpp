@@ -42,6 +42,9 @@
 #include"Iterator.h"
 #include"Aggregate.h"
 
+#include"InterContext.h"
+#include"Interpret.h"
+
 #include<vld.h>
 #include<iostream>
 
@@ -267,6 +270,19 @@ void test23() {
 	ag = nullptr;
 }
 
+void test24() {
+	InterContext *c = new InterContext();
+	AbstractExpression *te = new TerminalExpression("hello");
+	AbstractExpression *nte = new NonterminalExpression(te, 2);
+	nte->Interpret(*c);
+	delete nte;
+	nte = nullptr;
+	delete te;
+	te = nullptr;
+	delete c;
+	c = nullptr;
+}
+
 void main() {
-	test23();
+	test24();
 }

@@ -167,6 +167,8 @@
     <ClCompile Include="Flyweight.cpp" />
     <ClCompile Include="FlyweightFactory.cpp" />
     <ClCompile Include="Handle.cpp" />
+    <ClCompile Include="InterContext.cpp" />
+    <ClCompile Include="Interpret.cpp" />
     <ClCompile Include="Invoker.cpp" />
     <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="Leaf.cpp" />
@@ -209,6 +211,8 @@
     <ClInclude Include="Flyweight.h" />
     <ClInclude Include="FlyweightFactory.h" />
     <ClInclude Include="Handle.h" />
+    <ClInclude Include="InterContext.h" />
+    <ClInclude Include="Interpret.h" />
     <ClInclude Include="Invoker.h" />
     <ClInclude Include="Iterator.h" />
     <ClInclude Include="Leaf.h" />

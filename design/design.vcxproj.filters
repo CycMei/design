@@ -135,6 +135,12 @@
     <ClCompile Include="Iterator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="InterContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpret.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -246,6 +252,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Aggregate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InterContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpret.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
