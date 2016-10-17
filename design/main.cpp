@@ -2,6 +2,7 @@
 
 #include"Factory.h"
 #include"Product.h"
+
 #include"AbstractFactory.h"
 #include"Singletom.h"
 #include"BuilderProduct.h"
@@ -50,7 +51,7 @@
 
 
 void test1() {
-	Factory *fac = new ConcreteFactory();
+	Factory<Product> *fac = new ConcreteFactory<Product>();
 	Product *pro = fac->CreateProduct();
 	delete pro;
 	pro = nullptr;
@@ -284,5 +285,5 @@ void test24() {
 }
 
 void main() {
-	test24();
+	test1();
 }

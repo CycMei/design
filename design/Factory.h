@@ -1,17 +1,40 @@
 #ifndef FACTORY_H
 #define FACTORY_H
-class Product;
-class Factory {
+#include<iostream>
+template<typename MProduct> class Factory {
 public:
 	virtual ~Factory() = 0;
-	virtual Product *CreateProduct() = 0;
+	virtual MProduct *CreateProduct() = 0;
 protected:
 	Factory();
 };
-class ConcreteFactory :public Factory {
+
+template<typename MProduct> class ConcreteFactory :public Factory<MProduct> {
 public:
 	~ConcreteFactory();
 	ConcreteFactory();
-	Product *CreateProduct();
+	MProduct *CreateProduct() override;
 };
+
+
+template<typename MProduct> Factory<MProduct>::Factory() {
+
+}
+template<typename MProduct> Factory<MProduct>::~Factory() {
+
+}
+
+
+
+
+template<typename MProduct> ConcreteFactory<MProduct>::ConcreteFactory() {
+	std::cout << "ConcreteFactory.............." << std::endl;
+}
+template<typename MProduct> ConcreteFactory<MProduct>::~ConcreteFactory() {
+
+}
+template<typename MProduct> MProduct *ConcreteFactory<MProduct>::CreateProduct() {
+	return new ConcreteProduct();
+}
+
 #endif
