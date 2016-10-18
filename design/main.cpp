@@ -70,10 +70,11 @@ void test3() {
 void test4() {
 	Singleton *sgn = Singleton::Instance();
 	delete sgn;
+	sgn = nullptr;
 }
 
 void test5() {
-	auto temp = new ConcreteBuilder();
+	Builder *temp = new ConcreteBuilder();
 	Director *d = new Director(temp);
 	d->Construct();
 	delete d;
